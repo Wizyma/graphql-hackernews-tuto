@@ -1,2 +1,7 @@
-export const ENDPOINT = 'YOUR_ENDPOINT'
-export const SECRET = 'YOUR_SECRET' // optionnal
+const ENDPOINT = 'YOUR_ENDPOINT'
+const SECRET = 'YOUR_SECRET' // optionnal
+
+module.exports = {
+    ENDPOINT,
+    SECRET
+}
