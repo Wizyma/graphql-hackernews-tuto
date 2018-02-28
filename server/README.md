@@ -32,7 +32,7 @@ const server = new GraphQLServer({
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
       endpoint: "__PRISMA_ENDPOINT__",
-      secret: 'mysecret123',
+      secret: '__PRISMA_SECRET__',
     }),
   }),
 })
@@ -48,8 +48,8 @@ const server = new GraphQLServer({
     ...req,
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint: "https://eu1.prisma.sh/public-hillcloak-flier-942261/hackernews-graphql-js/dev",
-      secret: 'mysecret123',
+      endpoint: "__PRISMA_ENDPOINT__",
+      secret: '__PRISMA_SECRET__',
     }),
   }),
 })
